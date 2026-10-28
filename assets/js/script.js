@@ -12,7 +12,7 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-if (sidebarBtn) sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
 
@@ -50,8 +50,8 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-if (modalCloseBtn) modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-if (overlay) overlay.addEventListener("click", testimonialsModalFunc);
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -61,7 +61,7 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-if (select) select.addEventListener("click", function () { elementToggleFunc(this); });
+select.addEventListener("click", function () { elementToggleFunc(this); });
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
@@ -129,14 +129,6 @@ for (let i = 0; i < formInputs.length; i++) {
       formBtn.removeAttribute("disabled");
     } else {
       formBtn.setAttribute("disabled", "");
-    }
-
-    // update subject field if it's the fullname
-    if (this.name === 'fullname') {
-      const subjectField = form.querySelector('input[name="_subject"]');
-      if (subjectField) {
-        subjectField.value = "Contacted from webpage - " + this.value;
-      }
     }
 
   });
