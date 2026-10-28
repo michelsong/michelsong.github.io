@@ -607,6 +607,8 @@ main {
 
 .welcome-section-title {
   margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--jet);
 }
 
 .interest-list {

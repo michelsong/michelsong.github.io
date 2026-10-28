@@ -99,6 +99,7 @@
         <header>
           <h2 class="h2 article-title" data-i18n="welcome.title">Welcome</h2>
         </header>
+        <h3 class="h3 welcome-section-title" data-i18n="welcome.aboutTitle">About me</h3>
         <section class="welcome-profile" aria-label="About Michel" data-i18n-aria="welcome.profileLabel">
           <img class="welcome-avatar" src="./assets/images/my-avatar.png" alt="Illustrated portrait of Michel Idiaquez Song" data-i18n-alt="welcome.avatarAlt">
           <div class="welcome-profile-content">
@@ -127,26 +128,9 @@
             </div>
           </div>
         </section>
-        <section class="welcome-section" aria-labelledby="interests-title">
-          <h3 class="h3 welcome-section-title" id="interests-title" data-i18n="welcome.interestsTitle">Interests &amp; hobbies</h3>
-          <ul class="interest-list">
-            <li data-i18n="interests.volleyball">Volleyball</li>
-            <li data-i18n="interests.dj">DJing &amp; audio mixing</li>
-            <li data-i18n="interests.pc">Custom PC assembly</li>
-            <li data-i18n="interests.cinema">Cinema</li>
-            <li data-i18n="interests.skiing">Skiing</li>
-            <li data-i18n="interests.weightlifting">Weightlifting</li>
-            <li data-i18n="interests.pokemon">Pokémon TCG collecting</li>
-            <li data-i18n="interests.games">Video games</li>
-            <li data-i18n="interests.editing">Video editing</li>
-            <li data-i18n="interests.coffee">Coffee cupping &amp; tasting</li>
-            <li data-i18n="interests.travel">Traveling</li>
-            <li data-i18n="interests.baseball">Baseball</li>
-            <li data-i18n="interests.taekwondo">Taekwondo</li>
-            <li data-i18n="interests.f1">Formula 1</li>
-          </ul>
-        </section>
-        <section class="showcase-grid welcome-grid" aria-label="Portfolio sections" data-i18n-aria="welcome.sectionsLabel">
+        <section aria-labelledby="portfolio-sections-title">
+          <h3 class="h3 welcome-section-title" id="portfolio-sections-title" data-i18n="welcome.sectionsTitle">Explore my portfolio</h3>
+          <div class="showcase-grid welcome-grid" aria-label="Portfolio sections" data-i18n-aria="welcome.sectionsLabel">
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="engineering">
             <span class="showcase-kicker" data-i18n="welcome.cardEngineeringKicker">01 / Learning &amp; creating</span>
             <h3 class="h3" data-i18n="nav.engineering">Engineering course</h3>
@@ -172,6 +156,7 @@
             <h3 class="h3" data-i18n="nav.career">Career Development</h3>
             <p data-i18n="welcome.cardCareer">Internships, PEP and professional experience.</p>
           </button>
+          </div>
         </section>
       </article>
 
@@ -240,9 +225,41 @@
       <article class="showcase-page" data-page="activities">
         <header><h2 class="h2 article-title" data-i18n="nav.activities">Sport &amp; other activities</h2></header>
         <p class="showcase-intro" data-i18n="activities.intro">A place for the activities that show your interests, initiative and commitment outside your coursework.</p>
-        <section class="showcase-grid">
-          <div class="showcase-card"><span class="showcase-kicker" data-i18n="activities.sportKicker">Sport</span><h3 class="h3" data-i18n="activities.sportTitle">Add a sporting activity</h3><p data-i18n="activities.sportText">Include your sport, how long you have practiced, your role or level, and any goals or achievements.</p></div>
-          <div class="showcase-card"><span class="showcase-kicker" data-i18n="activities.otherKicker">Activities</span><h3 class="h3" data-i18n="activities.otherTitle">Add another activity</h3><p data-i18n="activities.otherText">Feature creative pursuits, clubs, personal projects or other interests and the skills they help you develop.</p></div>
+        <section class="welcome-section" aria-labelledby="sports-title">
+          <h3 class="h3 welcome-section-title" id="sports-title" data-i18n="activities.sportsTitle">Sports</h3>
+          <div class="showcase-grid">
+            <div class="showcase-card">
+              <span class="showcase-kicker" data-i18n="activities.volleyballKicker">Current · Competitive</span>
+              <h3 class="h3" data-i18n="activities.volleyballTitle">Inter-university volleyball</h3>
+              <p data-i18n="activities.volleyballText">I play as a middle blocker in competitive inter-university tournaments.</p>
+            </div>
+            <div class="showcase-card">
+              <span class="showcase-kicker" data-i18n="activities.taekwondoKicker">Martial arts</span>
+              <h3 class="h3" data-i18n="activities.taekwondoTitle">3rd Dan Taekwondo black belt</h3>
+              <p data-i18n="activities.taekwondoText">I earned my 3rd Dan black belt through discipline and dedicated training.</p>
+            </div>
+            <div class="showcase-card">
+              <span class="showcase-kicker" data-i18n="activities.baseballKicker">7 years</span>
+              <h3 class="h3" data-i18n="activities.baseballTitle">Baseball</h3>
+              <p data-i18n="activities.baseballText">Seven years of team experience, including competitive national-level play.</p>
+            </div>
+          </div>
+        </section>
+        <section class="welcome-section" aria-labelledby="activities-interests-title">
+          <h3 class="h3 welcome-section-title" id="activities-interests-title" data-i18n="activities.interestsTitle">Other interests &amp; hobbies</h3>
+          <ul class="interest-list">
+            <li data-i18n="interests.dj">DJing &amp; audio mixing</li>
+            <li data-i18n="interests.pc">Custom PC assembly</li>
+            <li data-i18n="interests.cinema">Cinema</li>
+            <li data-i18n="interests.skiing">Skiing</li>
+            <li data-i18n="interests.weightlifting">Weightlifting</li>
+            <li data-i18n="interests.pokemon">Pokémon TCG collecting</li>
+            <li data-i18n="interests.games">Video games</li>
+            <li data-i18n="interests.editing">Video editing</li>
+            <li data-i18n="interests.coffee">Coffee cupping &amp; tasting</li>
+            <li data-i18n="interests.travel">Traveling</li>
+            <li data-i18n="interests.f1">Formula 1</li>
+          </ul>
         </section>
       </article>
 
