@@ -10,7 +10,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261028">
 
   <!--
     - google font link
@@ -139,7 +139,7 @@
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="mobility">
             <span class="showcase-kicker" data-i18n="welcome.cardMobilityKicker">02 / Languages &amp; exchange</span>
             <h3 class="h3" data-i18n="nav.mobility">International Mobility</h3>
-            <p data-i18n="welcome.cardMobility">PCE, LV2 and other international experiences.</p>
+            <p data-i18n="welcome.cardMobility">Possible destinations, languages and international experiences.</p>
           </button>
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="sustainability">
             <span class="showcase-kicker" data-i18n="welcome.cardSustainabilityKicker">03 / Impact</span>
@@ -154,7 +154,7 @@
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="career">
             <span class="showcase-kicker" data-i18n="welcome.cardCareerKicker">05 / Professional journey</span>
             <h3 class="h3" data-i18n="nav.career">Career Development</h3>
-            <p data-i18n="welcome.cardCareer">Internships, PEP and professional experience.</p>
+            <p data-i18n="welcome.cardCareer">Internships and other professional experiences.</p>
           </button>
           </div>
         </section>
@@ -162,7 +162,6 @@
 
       <article class="showcase-page" data-page="engineering">
         <header><h2 class="h2 article-title" data-i18n="nav.engineering">Engineering course</h2></header>
-        <p class="showcase-intro" data-i18n="engineering.intro">A selection of the skills and work developed throughout my engineering course.</p>
         <div class="subnav" role="tablist" aria-label="Engineering course sections" data-i18n-aria="engineering.tabsLabel">
           <button type="button" class="subnav-link active" id="engineering-skills-tab" role="tab" aria-controls="engineering-skills-panel" aria-selected="true" data-subtab="engineering-skills" data-i18n="engineering.skillsTab">Skills</button>
           <button type="button" class="subnav-link" id="engineering-projects-tab" role="tab" aria-controls="engineering-projects-panel" aria-selected="false" data-subtab="engineering-projects" data-i18n="engineering.projectsTab">Projects</button>
@@ -190,32 +189,33 @@
 
       <article class="showcase-page" data-page="mobility">
         <header><h2 class="h2 article-title" data-i18n="nav.mobility">International Mobility</h2></header>
-        <p class="showcase-intro" data-i18n="mobility.intro">Experiences that have developed my language skills and international outlook.</p>
         <div class="subnav" role="tablist" aria-label="International Mobility sections" data-i18n-aria="mobility.tabsLabel">
-          <button type="button" class="subnav-link active" id="mobility-pce-tab" role="tab" aria-controls="mobility-pce-panel" aria-selected="true" data-subtab="mobility-pce">PCE</button>
-          <button type="button" class="subnav-link" id="mobility-lv2-tab" role="tab" aria-controls="mobility-lv2-panel" aria-selected="false" data-subtab="mobility-lv2">LV2</button>
-          <button type="button" class="subnav-link" id="mobility-other-tab" role="tab" aria-controls="mobility-other-panel" aria-selected="false" data-subtab="mobility-other" data-i18n="common.otherExperiences">Other experiences</button>
+          <button type="button" class="subnav-link active" id="mobility-destinations-tab" role="tab" aria-controls="mobility-destinations-panel" aria-selected="true" data-subtab="mobility-destinations" data-i18n="mobility.destinationsTab">Possible destinations</button>
+          <button type="button" class="subnav-link" id="mobility-languages-tab" role="tab" aria-controls="mobility-languages-panel" aria-selected="false" data-subtab="mobility-languages" data-i18n="mobility.languagesTab">Languages</button>
         </div>
-        <section class="subpanel active" id="mobility-pce-panel" role="tabpanel" aria-labelledby="mobility-pce-tab" data-subpanel="mobility-pce">
+        <section class="subpanel active" id="mobility-destinations-panel" role="tabpanel" aria-labelledby="mobility-destinations-tab" data-subpanel="mobility-destinations">
           <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker">PCE</span><h3 class="h3" data-i18n="mobility.pceTitle">Add your PCE experience</h3><p data-i18n="mobility.pceText">Describe the experience, destination or context, dates, your contribution and what you gained from it.</p></div>
+            <div class="showcase-card">
+              <span class="showcase-kicker" data-i18n="mobility.destinationsTab">Possible destinations</span>
+              <h3 class="h3" data-i18n="mobility.korea">Korea</h3>
+              <p data-i18n="mobility.koreaDescription">To master the language, experience the culture, and advance my studies in a leading engineering program.</p>
+            </div>
           </div>
         </section>
-        <section class="subpanel" id="mobility-lv2-panel" role="tabpanel" aria-labelledby="mobility-lv2-tab" data-subpanel="mobility-lv2" hidden>
-          <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker">LV2</span><h3 class="h3" data-i18n="mobility.lv2Title">Add your LV2 journey</h3><p data-i18n="mobility.lv2Text">Show your language learning, certifications, projects or examples of using the language in practice.</p></div>
-          </div>
-        </section>
-        <section class="subpanel" id="mobility-other-panel" role="tabpanel" aria-labelledby="mobility-other-tab" data-subpanel="mobility-other" hidden>
-          <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="nav.mobility">Mobility</span><h3 class="h3" data-i18n="mobility.otherTitle">Add another international experience</h3><p data-i18n="mobility.otherText">Include exchanges, travel with a learning purpose, international collaboration or cross-cultural activities.</p></div>
-          </div>
+        <section class="subpanel" id="mobility-languages-panel" role="tabpanel" aria-labelledby="mobility-languages-tab" data-subpanel="mobility-languages" hidden>
+          <ul class="interest-list language-list">
+            <li><span data-i18n="languages.english">English</span><span class="language-level" data-i18n="mobility.native">Native</span></li>
+            <li><span data-i18n="languages.french">French</span><span class="language-level" data-i18n="mobility.native">Native</span></li>
+            <li><span data-i18n="languages.spanish">Spanish</span><span class="language-level" data-i18n="mobility.native">Native</span></li>
+            <li><span data-i18n="languages.portuguese">Portuguese</span><span class="language-level" data-i18n="mobility.b1Level">B1 level</span></li>
+            <li><span data-i18n="languages.korean">Korean</span><span class="language-level" data-i18n="mobility.b1Level">B1 level</span></li>
+            <li><span data-i18n="languages.chinese">Chinese</span><span class="language-level" data-i18n="mobility.studying">Currently studying</span></li>
+          </ul>
         </section>
       </article>
 
       <article class="showcase-page" data-page="sustainability">
         <header><h2 class="h2 article-title" data-i18n="nav.sustainability">Sustainability &amp; Civic Engagement</h2></header>
-        <p class="showcase-intro" data-i18n="sustainability.intro">Share the actions and commitments through which you contribute to a more sustainable and engaged community.</p>
         <section class="showcase-grid">
           <div class="showcase-card"><span class="showcase-kicker" data-i18n="sustainability.kicker">Sustainability</span><h3 class="h3" data-i18n="sustainability.environmentTitle">Environmental initiatives</h3><p data-i18n="sustainability.environmentText">Add projects or actions related to sustainability. Explain the issue, your role and the impact or lessons learned.</p></div>
           <div class="showcase-card"><span class="showcase-kicker" data-i18n="sustainability.civicKicker">Civic engagement</span><h3 class="h3" data-i18n="sustainability.civicTitle">Community involvement</h3><p data-i18n="sustainability.civicText">Show volunteering, associations or civic projects, including your responsibilities and contribution.</p></div>
@@ -224,7 +224,6 @@
 
       <article class="showcase-page" data-page="activities">
         <header><h2 class="h2 article-title" data-i18n="nav.activities">Sport &amp; other activities</h2></header>
-        <p class="showcase-intro" data-i18n="activities.intro">A place for the activities that show your interests, initiative and commitment outside your coursework.</p>
         <section class="welcome-section" aria-labelledby="sports-title">
           <h3 class="h3 welcome-section-title" id="sports-title" data-i18n="activities.sportsTitle">Sports</h3>
           <div class="showcase-grid">
@@ -265,25 +264,18 @@
 
       <article class="showcase-page" data-page="career">
         <header><h2 class="h2 article-title" data-i18n="nav.career">Career Development</h2></header>
-        <p class="showcase-intro" data-i18n="career.intro">Present the experiences and steps that are shaping your professional direction.</p>
         <div class="subnav" role="tablist" aria-label="Career Development sections" data-i18n-aria="career.tabsLabel">
           <button type="button" class="subnav-link active" id="career-internships-tab" role="tab" aria-controls="career-internships-panel" aria-selected="true" data-subtab="career-internships" data-i18n="career.internshipsTab">Internships</button>
-          <button type="button" class="subnav-link" id="career-pep-tab" role="tab" aria-controls="career-pep-panel" aria-selected="false" data-subtab="career-pep">PEP</button>
           <button type="button" class="subnav-link" id="career-other-tab" role="tab" aria-controls="career-other-panel" aria-selected="false" data-subtab="career-other" data-i18n="common.otherExperiences">Other experiences</button>
         </div>
         <section class="subpanel active" id="career-internships-panel" role="tabpanel" aria-labelledby="career-internships-tab" data-subpanel="career-internships">
           <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="career.internshipKicker">Internship / Add dates</span><h3 class="h3" data-i18n="career.internshipTitle">Add an internship</h3><p data-i18n="career.internshipText">Describe the organization, role, responsibilities, skills applied and key outcomes. Add another card for each experience.</p></div>
-          </div>
-        </section>
-        <section class="subpanel" id="career-pep-panel" role="tabpanel" aria-labelledby="career-pep-tab" data-subpanel="career-pep" hidden>
-          <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker">PEP</span><h3 class="h3" data-i18n="career.pepTitle">Add your PEP experience</h3><p data-i18n="career.pepText">Summarize the context, objectives, actions and professional skills developed through your PEP.</p></div>
+            <div class="showcase-card"><span class="showcase-kicker" data-i18n="career.internshipKicker">RESEARCH INTERNSHIP / JUN 2026 – JUL 2026</span><h3 class="h3" data-i18n="career.internshipTitle">LILaC Research Group (UT3 / ENSEEIHT)</h3><p data-i18n="career.internshipText">Research on RAG models, LLMs, and computational social choice (predicting votes of political groups in the French National Assembly).</p></div>
           </div>
         </section>
         <section class="subpanel" id="career-other-panel" role="tabpanel" aria-labelledby="career-other-tab" data-subpanel="career-other" hidden>
           <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="nav.career">Career development</span><h3 class="h3" data-i18n="career.otherTitle">Add another experience</h3><p data-i18n="career.otherText">Include workshops, certifications, mentoring, career events or other steps in your professional development.</p></div>
+            <div class="showcase-card"><span class="showcase-kicker" data-i18n="career.otherKicker">Other experience</span><h3 class="h3" data-i18n="career.otherTitle">Interpreter</h3><p data-i18n="career.otherText">English-to-Spanish and French-to-Spanish interpreter at the COFFEE PRODUCERS ROASTERS FORUM EL SALVADOR.</p></div>
           </div>
         </section>
       </article>
