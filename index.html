@@ -10,7 +10,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=20261028">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261029-2">
 
   <!--
     - google font link
@@ -128,34 +128,41 @@
             </div>
           </div>
         </section>
-        <section aria-labelledby="portfolio-sections-title">
+        <section class="welcome-section" aria-labelledby="portfolio-sections-title">
           <h3 class="h3 welcome-section-title" id="portfolio-sections-title" data-i18n="welcome.sectionsTitle">Explore my portfolio</h3>
           <div class="showcase-grid welcome-grid" aria-label="Portfolio sections" data-i18n-aria="welcome.sectionsLabel">
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="engineering">
             <span class="showcase-kicker" data-i18n="welcome.cardEngineeringKicker">01 / Learning &amp; creating</span>
             <h3 class="h3" data-i18n="nav.engineering">Engineering course</h3>
-            <p data-i18n="welcome.cardEngineering">Skills, course projects and selected productions.</p>
+            <p data-i18n="welcome.cardEngineering">Technical and soft skills, plus a team project mapping marine pollution with an autonomous drone.</p>
           </button>
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="mobility">
             <span class="showcase-kicker" data-i18n="welcome.cardMobilityKicker">02 / Languages &amp; exchange</span>
             <h3 class="h3" data-i18n="nav.mobility">International Mobility</h3>
-            <p data-i18n="welcome.cardMobility">Possible destinations, languages and international experiences.</p>
+            <p data-i18n="welcome.cardMobility">A study-abroad goal in South Korea and my languages with proficiency levels.</p>
           </button>
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="sustainability">
             <span class="showcase-kicker" data-i18n="welcome.cardSustainabilityKicker">03 / Impact</span>
             <h3 class="h3" data-i18n="nav.sustainability">Sustainability &amp; Civic Engagement</h3>
-            <p data-i18n="welcome.cardSustainability">Initiatives, volunteering and community involvement.</p>
+            <p data-i18n="welcome.cardSustainability">A space for environmental initiatives and civic engagement.</p>
           </button>
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="activities">
             <span class="showcase-kicker" data-i18n="welcome.cardActivitiesKicker">04 / Beyond the classroom</span>
             <h3 class="h3" data-i18n="nav.activities">Sport &amp; other activities</h3>
-            <p data-i18n="welcome.cardActivities">Activities, interests and personal commitments.</p>
+            <p data-i18n="welcome.cardActivities">Volleyball, Taekwondo, baseball, and the hobbies I enjoy outside class.</p>
           </button>
           <button type="button" class="showcase-card welcome-card" data-nav-link data-target-page="career">
             <span class="showcase-kicker" data-i18n="welcome.cardCareerKicker">05 / Professional journey</span>
             <h3 class="h3" data-i18n="nav.career">Career Development</h3>
-            <p data-i18n="welcome.cardCareer">Internships and other professional experiences.</p>
+            <p data-i18n="welcome.cardCareer">Research on RAG, LLMs, and computational social choice, plus interpreting experience.</p>
           </button>
+          </div>
+        </section>
+        <section class="welcome-section" aria-labelledby="elevator-pitch-title">
+          <h3 class="h3 welcome-section-title" id="elevator-pitch-title" data-i18n="welcome.videoTitle">Elevator pitch</h3>
+          <div class="elevator-video-placeholder" role="img" aria-label="Elevator pitch video coming soon" data-i18n-aria="welcome.videoPlaceholderLabel">
+            <ion-icon name="videocam-outline" aria-hidden="true"></ion-icon>
+            <p data-i18n="welcome.videoPlaceholder">My elevator pitch video will be added here soon.</p>
           </div>
         </section>
       </article>
@@ -165,24 +172,53 @@
         <div class="subnav" role="tablist" aria-label="Engineering course sections" data-i18n-aria="engineering.tabsLabel">
           <button type="button" class="subnav-link active" id="engineering-skills-tab" role="tab" aria-controls="engineering-skills-panel" aria-selected="true" data-subtab="engineering-skills" data-i18n="engineering.skillsTab">Skills</button>
           <button type="button" class="subnav-link" id="engineering-projects-tab" role="tab" aria-controls="engineering-projects-panel" aria-selected="false" data-subtab="engineering-projects" data-i18n="engineering.projectsTab">Projects</button>
-          <button type="button" class="subnav-link" id="engineering-productions-tab" role="tab" aria-controls="engineering-productions-panel" aria-selected="false" data-subtab="engineering-productions" data-i18n="engineering.productionsTab">Best productions</button>
         </div>
         <section class="subpanel active" id="engineering-skills-panel" role="tabpanel" aria-labelledby="engineering-skills-tab" data-subpanel="engineering-skills">
-          <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="engineering.kickerSkills">Skills</span><h3 class="h3" data-i18n="engineering.technicalTitle">Technical skills</h3><p data-i18n="engineering.technicalText">Add the engineering tools, methods and technologies you have learned, with examples of how you used them.</p></div>
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="engineering.kickerSkills">Skills</span><h3 class="h3" data-i18n="engineering.strengthsTitle">Personal strengths</h3><p data-i18n="engineering.strengthsText">Highlight problem-solving, teamwork, communication or other strengths, supported by evidence from your work.</p></div>
-          </div>
+          <section class="welcome-section" aria-labelledby="engineering-languages-title">
+            <h3 class="h3 welcome-section-title" id="engineering-languages-title" data-i18n="engineering.languagesTitle">Languages</h3>
+            <ul class="interest-list">
+              <li>Python</li>
+              <li>Ada</li>
+              <li>SQL</li>
+            </ul>
+          </section>
+          <section class="welcome-section" aria-labelledby="engineering-data-title">
+            <h3 class="h3 welcome-section-title" id="engineering-data-title" data-i18n="engineering.dataProcessingTitle">Data Processing</h3>
+            <ul class="interest-list">
+              <li>MATLAB</li>
+              <li>NumPy</li>
+            </ul>
+          </section>
+          <section class="welcome-section" aria-labelledby="engineering-tools-title">
+            <h3 class="h3 welcome-section-title" id="engineering-tools-title" data-i18n="engineering.toolsTitle">Tools</h3>
+            <ul class="interest-list">
+              <li>Git</li>
+              <li>Copilot</li>
+              <li>Linux</li>
+            </ul>
+          </section>
+          <section class="welcome-section" aria-labelledby="engineering-soft-skills-title">
+            <h3 class="h3 welcome-section-title" id="engineering-soft-skills-title" data-i18n="engineering.softSkillsTitle">Soft Skills</h3>
+            <ul class="interest-list">
+              <li data-i18n="engineering.problemSolving">Problem solving</li>
+              <li data-i18n="engineering.teamwork">Teamwork</li>
+              <li data-i18n="engineering.communication">Communication</li>
+              <li data-i18n="engineering.adaptability">Adaptability</li>
+            </ul>
+          </section>
         </section>
         <section class="subpanel" id="engineering-projects-panel" role="tabpanel" aria-labelledby="engineering-projects-tab" data-subpanel="engineering-projects" hidden>
           <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="engineering.projectPlaceholderKicker">Project / Add year</span><h3 class="h3" data-i18n="engineering.projectTitle">Add a course project</h3><p data-i18n="engineering.projectText">Summarize the challenge, your contribution, the tools used and the result. Add project images or a report link when available.</p></div>
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="engineering.projectPlaceholderKicker">Project / Add year</span><h3 class="h3" data-i18n="engineering.project2Title">Add another project</h3><p data-i18n="engineering.project2Text">Show the process as well as the final result: objectives, key decisions, collaboration and what you learned.</p></div>
-          </div>
-        </section>
-        <section class="subpanel" id="engineering-productions-panel" role="tabpanel" aria-labelledby="engineering-productions-tab" data-subpanel="engineering-productions" hidden>
-          <div class="showcase-grid">
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="engineering.productionPlaceholderKicker">Production / Add year</span><h3 class="h3" data-i18n="engineering.productionTitle">Add a best production</h3><p data-i18n="engineering.productionText">Feature a report, prototype, presentation, technical study or other work you are especially proud of.</p></div>
-            <div class="showcase-card"><span class="showcase-kicker" data-i18n="engineering.productionPlaceholderKicker">Production / Add year</span><h3 class="h3" data-i18n="engineering.production2Title">Add another production</h3><p data-i18n="engineering.production2Text">Include a short context, your role and a link or visual that lets visitors explore the work.</p></div>
+            <div class="showcase-card">
+              <div class="project-image-placeholder" role="img" aria-label="Project image placeholder" data-i18n-aria="engineering.projectImageLabel">
+                <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                <span data-i18n="engineering.projectImagePlaceholder">Project photo will go here</span>
+              </div>
+              <span class="showcase-kicker" data-i18n="engineering.droneProjectKicker">Team Engineering Project / 2026</span>
+              <h3 class="h3" data-i18n="engineering.droneProjectTitle">Autonomous Drone for Marine Pollution Mapping</h3>
+              <p data-i18n="engineering.droneProjectText">Developed an autonomous drone prototype capable of detecting and mapping marine pollution. Integrated a LiDAR TF-Luna infrared sensor utilizing the Time-of-Flight (ToF) principle to detect water surface irregularities, alongside two HC-SR04 ultrasound sensors for 2D spatial positioning. Managed hardware data collection through an Arduino microcontroller. Processed the telemetry data in Python, implementing a Kalman filter to smooth sensor noise and generating a real-time 2D grid map of the detected waste using Tkinter.</p>
+            </div>
+            <div class="showcase-card"><span class="showcase-kicker" data-i18n="engineering.projectPlaceholderKicker">Coming soon</span><h3 class="h3" data-i18n="engineering.project2Title">Coming soon...</h3><p data-i18n="engineering.project2Text">More projects will be added here soon.</p></div>
           </div>
         </section>
       </article>

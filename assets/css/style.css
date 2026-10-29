@@ -611,6 +611,33 @@ main {
   border-bottom: 1px solid var(--jet);
 }
 
+.elevator-video-placeholder {
+  display: flex;
+  min-height: 220px;
+  aspect-ratio: 16 / 9;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  color: var(--light-gray);
+  text-align: center;
+  background: var(--bg-gradient-jet);
+  border: 1px dashed var(--jet);
+  border-radius: 14px;
+}
+
+.elevator-video-placeholder ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 36px;
+}
+
+.elevator-video-placeholder p {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.65;
+}
+
 .interest-list {
   display: flex;
   flex-wrap: wrap;
@@ -649,6 +676,28 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   padding: 20px;
+}
+
+.project-image-placeholder {
+  display: flex;
+  min-height: 150px;
+  aspect-ratio: 16 / 9;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: var(--light-gray);
+  text-align: center;
+  background: var(--onyx);
+  border: 1px dashed var(--jet);
+  border-radius: 10px;
+  font-size: var(--fs-7);
+}
+
+.project-image-placeholder ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 28px;
 }
 
 .showcase-card h3 {
