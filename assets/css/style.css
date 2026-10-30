@@ -621,31 +621,14 @@ main {
   border-bottom: 1px solid var(--jet);
 }
 
-.elevator-video-placeholder {
-  display: flex;
-  min-height: 220px;
+.elevator-video {
+  display: block;
+  width: 100%;
   aspect-ratio: 16 / 9;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 24px;
-  color: var(--light-gray);
-  text-align: center;
-  background: var(--bg-gradient-jet);
-  border: 1px dashed var(--jet);
+  object-fit: contain;
+  background: var(--onyx);
+  border: 1px solid var(--jet);
   border-radius: 14px;
-}
-
-.elevator-video-placeholder ion-icon {
-  color: var(--orange-yellow-crayola);
-  font-size: 36px;
-}
-
-.elevator-video-placeholder p {
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.65;
 }
 
 .interest-list {

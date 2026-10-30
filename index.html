@@ -160,10 +160,9 @@
         </section>
         <section class="welcome-section" aria-labelledby="elevator-pitch-title">
           <h3 class="h3 welcome-section-title" id="elevator-pitch-title" data-i18n="welcome.videoTitle">Elevator pitch</h3>
-          <div class="elevator-video-placeholder" role="img" aria-label="Elevator pitch video coming soon" data-i18n-aria="welcome.videoPlaceholderLabel">
-            <ion-icon name="videocam-outline" aria-hidden="true"></ion-icon>
-            <p data-i18n="welcome.videoPlaceholder">My elevator pitch video will be added here soon.</p>
-          </div>
+          <video class="elevator-video" controls preload="metadata" playsinline aria-label="Elevator pitch video" data-i18n-aria="welcome.videoLabel">
+            <source src="./assets/images/elevatorpitch.mp4" type="video/mp4">
+          </video>
         </section>
       </article>
 
