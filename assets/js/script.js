@@ -18,6 +18,7 @@ const frenchTranslations = {
   "welcome.kicker": "Élève-ingénieur · ENSEEIHT",
   "welcome.bio": "Je suis élève-ingénieur à l'ENSEEIHT (SN — Sciences du Numérique), après une formation en PCSI. Je suis passionné par le génie logiciel, la recherche en intelligence artificielle (LLM et modèles RAG) et le montage de PC sur mesure. En dehors des écrans, vous me trouverez généralement sur un terrain de sport, à découvrir de nouvelles musiques ou à regarder les dernières sorties cinéma.",
   "welcome.linkedin": "Me retrouver sur LinkedIn",
+  "welcome.email": "M'envoyer un e-mail",
   "welcome.cv": "Télécharger mon CV",
   "welcome.projectsTitle": "Projets en cours",
   "welcome.inProgress": "En cours",
